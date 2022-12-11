@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- API que será consumida -->
+  <script src="js/api.js"></script>
+  <!-- Conexão entre a interface e o backend -->
+  <script defer src="js/animalService.js"></script>
+  <!-- Folha de Estilo -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Doe ou cadastre um animal</title>
+</head>
+<body>
+  <header id="menu">
+    <h1>Doe ou cadastre um animal</h1>
+    <a href="signIn.html">Login</a>
+    <a href="signUp.html">Cadastre-se</a>
+  </header>
+  <main>
+    <section class="container another-class">
+    <!-- FORMULARIO INICIO -->
+      <form id="animal-form" class="form">
+        <input type="text" name="name" placeholder="Nome do animal..." autocomplete="off">
+        <input type="text" name="image_url" placeholder="URL da Imagem..." autocomplete="off">
+        <textarea name="description" placeholder="Descrição do animal..."></textarea>
+        <input type="submit" value="Cadastrar" class="button">
+      </form>
+    <!-- FORMULARIO FIM -->
+    <!-- Começo da lista renderizada dinâmicamente -->
+    <ul id="animal-list" class="cards">
+      <!-- Aqui que vai carregar os registros -->
+    </ul>
+    <!-- Fim da lista renderizada dinâmicamente -->
+    </section>
+  </main>
+</body>
+</html>
